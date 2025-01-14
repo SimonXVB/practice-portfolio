@@ -1,0 +1,130 @@
+#stack {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(236, 58%, 52%);
+    padding: 25px;
+}
+
+#stack h1 {
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#stack h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Table */
+#table {
+    font-size: 1.5rem;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#table button {
+    width: 150px;
+    font-size: 1.3rem;
+    background-color: hsl(100, 100%, 100);
+    color: hsl(0, 0%, 0%);
+    padding: 10px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+#table a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+#table a:visited {
+    color: hsl(0, 0%, 0%);
+}
+
+#table button:hover {
+    background-color: hsla(0, 0%, 100%, 0.600);
+}
+/* Table */
+
+/* Slider */
+#wrapper {
+    position: relative;
+    width: 95vw;
+    height: 150px;
+    padding: 5px;
+    overflow: hidden;
+    margin-block: 50px;
+}
+
+.item {
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    left: max(calc(250px * 8), 100%);
+    animation: slider 30s linear infinite;
+}
+
+@keyframes slider {
+    to {
+        left: -250px;
+    }
+}
+
+.html {
+    animation-delay: calc((30s / 8) * 7 * -1);
+}
+
+.css {
+    animation-delay: calc((30s / 8) * 6 * -1);
+}
+
+.js {
+    animation-delay: calc((30s / 8) * 5 * -1);
+}
+
+.react {
+    animation-delay: calc((30s / 8) * 4 * -1);
+}
+
+.express {
+    animation-delay: calc((30s / 8) * 3 * -1);
+}
+
+.tailwind {
+    animation-delay: calc((30s / 8) * 2 * -1);
+}
+
+.postgres {
+    animation-delay: calc((30s / 8) * 1 * -1);
+}
+
+.prisma {
+    animation-delay: calc((30s / 8) * 0 * -1);
+}
+/* Slider */
+
+
+
+@media (max-width: 700px) {
+    #table {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #stack h1 {
+        font-size: 2rem;
+    }
+    
+    #stack h2 {
+        font-size: 1.3rem;
+    }
+
+    #table button {
+        font-size: 1rem;
+    }
+}

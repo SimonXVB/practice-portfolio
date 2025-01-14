@@ -1,0 +1,99 @@
+#github {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+}
+
+#github {
+    background-color:hsl(24, 100%, 58%);
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#github img {
+    cursor: pointer;
+}
+
+#github h1 {
+    font-size: 3rem;
+}
+
+#github h2 {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#github-link, #github-link:visited {
+    color: hsl(100, 100%, 100%);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#github-link:hover {
+    color: hsla(0, 0%, 100%, 0.600);
+}
+
+#buttons {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#github button {
+    font-size: 2rem;
+    border-radius: 0;
+    max-width: 500px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.notable-a {
+    text-decoration: none;
+    height: fit-content;
+    margin-block: 20px;
+    width: 100%;
+}
+
+.notable-a:visited {
+    color: hsl(0, 0%, 0%);
+}
+
+@media (max-width: 1470px) {
+    #github {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 875px) {
+    #github h1 {
+        font-size: 2rem;
+    }
+    
+    #github h2 {
+        font-size: 1.3rem;
+    }
+
+    #github button {
+        font-size: 1.3rem;
+        max-width: 300px;
+    }
+}

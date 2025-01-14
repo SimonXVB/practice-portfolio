@@ -1,0 +1,29 @@
+#about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(358, 85%, 52%);
+    padding: 25px;
+}
+
+#about h1 {
+    font-size: 3rem;
+}
+
+
+#about p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 875px) {
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1.2rem;
+    }
+}
