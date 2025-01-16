@@ -59,4 +59,8 @@ body::before {
     #wrapper {
         display: none;
     }
+
+    .glitch {
+        animation: none !important;
+    }
 }

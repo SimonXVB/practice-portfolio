@@ -1,0 +1,13 @@
+.floating {
+    animation: floating 10s linear infinite;
+}
+
+@keyframes floating {
+    20% {
+        transform: translate(-80px, -100px);
+    }
+
+    to {
+        transform: rotate(210deg) translateX(-20px 20px) rotate(-210deg);
+    }
+}
